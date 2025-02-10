@@ -3,7 +3,7 @@ import { FiltersProps } from "../types/task";
 
 const Filters: React.FC<FiltersProps> = ({ filter, setFilter }) => {
   return (
-    <div className="flex flex-col gap-y-3 sm:flex-row sm:justify-center sm:items-center  space-x-3 mb-6">
+    <div className="flex flex-col gap-y-3 sm:flex-row sm:justify-center sm:items-center  gap-x-3 mb-6">
       {["all", "active", "completed"].map((option) => (
         <button
           key={option}
